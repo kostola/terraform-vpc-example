@@ -151,6 +151,7 @@ module "vpc" {
   enable_dns_hostnames          = true
   enable_dns_support            = true
   manage_default_security_group = false
+  create_igw                    = false
 
   tags = merge(var.extra_tags,
     {
